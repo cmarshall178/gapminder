@@ -1,0 +1,7 @@
+name: "our-website"
+navbar:
+  title: "Our Collaborative Website"
+  left:
+    - text: "Life Expectancy"
+      href: Life Expectancy.html
+output_dir: "."
