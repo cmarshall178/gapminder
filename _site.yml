@@ -4,4 +4,8 @@ navbar:
   left:
     - text: "Life Expectancy"
       href: Life Expectancy.html
+    - text: "Infant Mortality"
+      href: Infant Mortality.html
+    - text: "Fertility"
+      href: Fertility.html
 output_dir: "."
