@@ -1,0 +1,43 @@
+---
+title: "Life Expectancy"
+author: "Chris Marshall"
+date: "2/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Data
+
+Today, we'll use ggplot to visually explore global trends in public health and economics compiled by the Gapminder project. This project was pioneered by Hans Rosling, who is famous for describing the prosperity of nations over time through famines, wars and other historic events with this beautiful data visualization in his 2006 TED Talk: The best stats you've ever seen:
+
+```{r, include=FALSE, warning=FALSE}
+library(dslabs) #install.packages("dslabs")
+library(tidyverse)
+```
+
+```{r}
+gap2011 <- gapminder %>% 
+  as_tibble() %>% 
+  filter(year == 2011)
+```
+
+##Life expectancy
+
+```{r}
+#What is the distribution of values (show e.g. in a histogram, a density plot, or boxplot (or all three!)) and does that vary based on continent?
+
+ggplot(gap2011, aes(gdp/population)) +
+  geom_density(kernel = "gaussian", aes(life_expectancy)) #color, fill, group, linetype, size, weight  
+    
+ggplot(gap2011, aes(life_expectancy)) +
+  geom_histogram(binwidth = 5) 
+
+ggplot(gap2011) +
+  geom_boxplot(aes(x = continent, y = life_expectancy))
+  
+#How does life expectancy relate to infant mortality rates, fertility, population size, or GDP? How many variables can you display on the same plot and is the most effective or visually appealing way to display the patterns?
+```
+
