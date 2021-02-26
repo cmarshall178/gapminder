@@ -1,0 +1,22 @@
+---
+title: "Fertility"
+author: "Chris Marshall"
+date: "2/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE, warning=FALSE}
+library(dslabs) #install.packages("dslabs")
+library(tidyverse)
+```
+
+##Fertility
+
+```{r}
+ggplot(gap2011, aes(x = gdp, y = fertility)) +
+  geom_point()
+```
