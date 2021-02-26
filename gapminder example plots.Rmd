@@ -33,7 +33,7 @@ ggplot(gap2011, aes(gdp/population)) +
   geom_density(kernel = "gaussian", aes(life_expectancy)) #color, fill, group, linetype, size, weight  
     
 ggplot(gap2011, aes(life_expectancy)) +
-  geom_histogram(binwidth = 5, fill = continent) 
+  geom_histogram(binwidth = 5) 
 
 ggplot(gap2011) +
   geom_boxplot(aes(x = continent, y = life_expectancy))
