@@ -1,5 +1,5 @@
 ---
-title: "Life Expectancy"
+title: "Life Expectancy 2011"
 author: ""
 date: ""
 output: html_document
@@ -18,7 +18,7 @@ library(dslabs) #install.packages("dslabs")
 library(tidyverse)
 ```
 
-```{r}
+```{r, include=FALSE}
 gap2011 <- gapminder %>% 
   as_tibble() %>% 
   filter(year == 2011)

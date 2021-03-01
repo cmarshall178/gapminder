@@ -11,7 +11,7 @@
 
 
 
-<title>Infant Mortality</title>
+<title>Infant Mortality 2011</title>
 
 <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -379,19 +379,14 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Infant Mortality</h1>
+<h1 class="title toc-ignore">Infant Mortality 2011</h1>
 <h4 class="author"></h4>
 
 </div>
 
 
-<pre class="r"><code>gap2011 &lt;- gapminder %&gt;% 
-  as_tibble() %&gt;% 
-  filter(year == 2011)</code></pre>
-<p>##Infant mortality</p>
 <pre class="r"><code>ggplot(gap2011) +
   geom_point(aes(x = gdp, y = infant_mortality))</code></pre>
-<pre><code>## Warning: Removed 19 rows containing missing values (geom_point).</code></pre>
 <p><img src="InfantMortality_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 
 

@@ -1,7 +1,7 @@
 ---
-title: "Fertility"
-author: "Chris Marshall"
-date: "2/26/2021"
+title: "Fertility 2011"
+author: ""
+date: ""
 output: html_document
 ---
 
@@ -14,16 +14,13 @@ library(dslabs) #install.packages("dslabs")
 library(tidyverse)
 ```
 
-```{r}
+```{r, include=FALSE}
 gap2011 <- gapminder %>% 
   as_tibble() %>% 
   filter(year == 2011)
 ```
 
-
-##Fertility
-
-```{r}
+```{r, warning=FALSE}
 ggplot(gap2011, aes(x = gdp, y = fertility)) +
   geom_point()
 ```

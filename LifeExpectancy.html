@@ -11,7 +11,7 @@
 
 
 
-<title>Life Expectancy</title>
+<title>Life Expectancy 2011</title>
 
 <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -362,7 +362,7 @@ div.tocify {
   <a href="LifeExpectancy.html">Life Expectancy</a>
 </li>
 <li>
-  <a href="Infant mortality.html">Infant Mortality</a>
+  <a href="InfantMortality.html">Infant Mortality</a>
 </li>
 <li>
   <a href="Fertility.html">Fertility</a>
@@ -379,7 +379,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Life Expectancy</h1>
+<h1 class="title toc-ignore">Life Expectancy 2011</h1>
 <h4 class="author"></h4>
 
 </div>
@@ -387,9 +387,6 @@ div.tocify {
 
 <p>##Data</p>
 <p>Today, we’ll use ggplot to visually explore global trends in public health and economics compiled by the Gapminder project. This project was pioneered by Hans Rosling, who is famous for describing the prosperity of nations over time through famines, wars and other historic events with this beautiful data visualization in his 2006 TED Talk: The best stats you’ve ever seen:</p>
-<pre class="r"><code>gap2011 &lt;- gapminder %&gt;% 
-  as_tibble() %&gt;% 
-  filter(year == 2011)</code></pre>
 <p>##Life expectancy</p>
 <pre class="r"><code>#What is the distribution of values (show e.g. in a histogram, a density plot, or boxplot (or all three!)) and does that vary based on continent?
 
