@@ -1,7 +1,7 @@
 name: "Chris Marshall"
 navbar:
   title: "Gapminder plots"
-  left:
+left:
     - text: "Life Expectancy"
       href: Life Expectancy.html
     - text: "Infant Mortality"
