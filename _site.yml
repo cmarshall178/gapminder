@@ -1,6 +1,6 @@
-name: "our-website"
+name: "Chris Marshall"
 navbar:
-  title: "Our Collaborative Website"
+  title: "Gapminder plots"
   left:
     - text: "Life Expectancy"
       href: Life Expectancy.html
