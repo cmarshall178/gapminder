@@ -301,6 +301,9 @@ $(document).ready(function () {
 </div>
 
 
+<pre class="r"><code>gap2011 &lt;- gapminder %&gt;% 
+  as_tibble() %&gt;% 
+  filter(year == 2011)</code></pre>
 <p>##Infant mortality</p>
 <pre class="r"><code>ggplot(gap2011) +
   geom_point(aes(x = gdp, y = infant_mortality))</code></pre>
