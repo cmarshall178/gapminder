@@ -15,4 +15,4 @@ output:
     theme: cerulean
     highlight: textmate
     toc: true 
-    toc_float: true 
+    toc_float: true
