@@ -5,7 +5,14 @@ navbar:
     - text: "Life Expectancy"
       href: LifeExpectancy.html
     - text: "Infant Mortality"
-      href: Infant mortality.html
+      href: InfantMortality.html
     - text: "Fertility"
       href: Fertility.html
+
 output_dir: "."
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    toc: true 
+    toc_float: true 
