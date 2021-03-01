@@ -1,11 +1,11 @@
 ---
 title: "Infant Mortality"
-author: "Chris Marshall"
-date: "2/26/2021"
+author: ""
+date: ""
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 

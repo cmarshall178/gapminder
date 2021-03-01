@@ -1,7 +1,7 @@
 ---
 title: "Life Expectancy"
-author: "Chris Marshall"
-date: "2/26/2021"
+author: ""
+date: ""
 output: html_document
 ---
 
