@@ -1,0 +1,9 @@
+---
+title: "Gapminder Plots"
+author: "Chris Marshall"
+date: ""
+output: html_document
+---
+
+### Example Plots using Gapminder Data
+
