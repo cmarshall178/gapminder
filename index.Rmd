@@ -6,4 +6,3 @@ output: html_document
 ---
 
 ### Example Plots using Gapminder Data
-
